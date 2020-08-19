@@ -114,29 +114,4 @@ contains
 !
   end function cost
 !
-! pure subroutine move_particle(p,s)
-! class(particle),intent(inout) :: p(:,:)
-! real(REAL64),intent(in)       :: s
-! real(REAL64)                  :: s2
-! integer                       :: i,j,n1
-!
-!   n1 = SIZE(p,1)
-!
-!   do j=2,NZ
-!
-!     p(1,j)%q(2)  = p(1,j)%q(2)  + s * p(1,j)%f(2)
-!     p(1,j)%q(3)  = p(1,j)%q(3)  + s * p(1,j)%f(3)
-!
-!     do i=2,n1-1
-!       p(i,j)%q(:) = p(i,j)%q(:) + s * p(i,j)%f(:)
-!     enddo
-!
-!     p(n1,j)%q(1) = p(n1,j)%q(1) + s * p(n1,j)%f(1)
-!     p(n1,j)%q(3) = p(n1,j)%q(3) + s * p(n1,j)%f(3)
-!
-!   enddo
-!
-! end subroutine move_particle
-!
 end program main
-
