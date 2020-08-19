@@ -1,9 +1,9 @@
 # milkcarton_optimizer
-====
 
 ## Description
 
 水圧で膨らんだ牛乳パックを離散点の力学系シミュレーションで計算します。
+[LICENSE.png](https://github.com/sacasacla/milkcarton_optimizer/blob/master/dat/carton.png)
 
 ## Requirement
 
